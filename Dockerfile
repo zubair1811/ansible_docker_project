@@ -7,4 +7,5 @@ COPY fonts /usr/share/nginx/html/fonts
 COPY images /usr/share/nginx/html/images
 COPY js /usr/share/nginx/html/js
 COPY videos /usr/share/nginx/html/video
+COPY news-detail.html /usr/share/nginx/html/
 EXPOSE 80
