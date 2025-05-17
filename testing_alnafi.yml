@@ -1,5 +1,5 @@
 ---
-- name: "This is testing server"
+- name: "This is testing server for Alnfai Live session"
   hosts: all
   become: true
   tasks:
