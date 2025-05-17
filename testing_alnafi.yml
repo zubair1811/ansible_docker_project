@@ -1,9 +1,9 @@
 ---
-- name: "This is testing server for Alnafi Live session"
+- name: "This is testing server for Alnafi Live session##############"
   hosts: all
   become: true
   tasks:
-  - name: "Create the test file"
+  - name: "Create the test file######"
     ansible.builtin.file:
       path: /root/abd.txt
       state: touch
