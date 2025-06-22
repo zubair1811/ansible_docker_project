@@ -32,7 +32,7 @@
       source: build
       name: nginx_image:v1
       build:
-        path: /home/ansible/projects1/
+        path: /home/ansible/projects1/ansible_docker_project/
       state: present
   
   - name: Creating the container and start
