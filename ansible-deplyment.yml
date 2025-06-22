@@ -1,5 +1,5 @@
 ---
-- hosts: server
+- hosts: node2
   gather_facts: false
   remote_user: ansible
   tasks:
