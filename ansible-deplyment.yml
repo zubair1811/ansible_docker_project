@@ -1,12 +1,12 @@
 ---
-- hosts: docker
+- hosts: node2
   gather_facts: false
   remote_user: root
   tasks:
     - name: Fetch files from the remote server
       synchronize:
-        src: /root/.jenkins/workspace/Myjob_github_ansible_docker/
-        dest: /home/aadmin/myproject/projects
+        src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
+        dest: /home/ansible/myproject/projects1
         mode: pull
 - hosts: ansible
   gather_facts: false
