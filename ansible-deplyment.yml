@@ -6,7 +6,7 @@
     - name: Fetch files from jenkins at the remote server
       synchronize:
         src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
-        dest: /home/ansible/projects1/
+        dest: /home/ansible/projects1/ansible_docker_project/
         mode: pull
 - hosts: server
   gather_facts: false
