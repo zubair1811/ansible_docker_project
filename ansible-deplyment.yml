@@ -8,7 +8,7 @@
         src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
         dest: /home/ansible/projects1
         mode: pull
-- hosts: node1
+- hosts: node2
   gather_facts: false
   remote_user: ansible
   tasks:
