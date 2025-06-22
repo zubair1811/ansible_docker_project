@@ -8,9 +8,9 @@
         src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
         dest: /home/ansible/projects1
         mode: pull
-- hosts: server
+- hosts: node1
   gather_facts: false
-  remote_user: server
+  remote_user: ansible
   tasks:
   - name: Stopping the container!!!!!
     docker_container:
