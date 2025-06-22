@@ -1,14 +1,14 @@
 ---
-- hosts: node2
+- hosts: server
   gather_facts: false
   remote_user: ansible
   tasks:
     - name: Fetch files from jenkins at the remote server
       synchronize:
         src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
-        dest: /home/ansible/projects1
+        dest: /home/ansible/projects1/cicd_ansible_project_1
         mode: pull
-- hosts: node2
+- hosts: server
   gather_facts: false
   remote_user: ansible
   tasks:
