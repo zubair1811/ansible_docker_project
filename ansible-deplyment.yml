@@ -8,9 +8,9 @@
         src: /var/lib/jenkins/workspace/cicd_ansible_project_1/
         dest: /home/ansible/projects1
         mode: pull
-- hosts: ansible
+- hosts: server
   gather_facts: false
-  remote_user: ansible
+  remote_user: server
   tasks:
   - name: Stopping the container!!!!!
     docker_container:
@@ -32,7 +32,7 @@
       source: build
       name: nginx_image:v1
       build:
-        path: /home/aadmin/myproject/projects/
+        path: /home/ansible/projects1/
       state: present
   
   - name: Creating the container and start
